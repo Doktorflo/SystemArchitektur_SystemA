@@ -29,7 +29,7 @@ class Rechnungseingabe extends React.Component {
         console.log("Sending data: " + this.state);
 
         let xhr = new XMLHttpRequest();
-        xhr.open('POST', '', true);
+        xhr.open('POST', system_b_url, true);
         xhr.onload = function (data) {
             console.log("Response Data: " + data)
         };
